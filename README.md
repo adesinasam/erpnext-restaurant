@@ -27,7 +27,7 @@ ___
 ### How to Install
 
 #### Self Host:
-1. `bench get-app https://github.com/adesinsam/erpnext-restaurant.git`
+1. `bench get-app https://github.com/adesinasam/erpnext-restaurant.git`
 2. `bench setup requirements`
 3. `bench build --app restaurant_management`
 4. `bench restart`
