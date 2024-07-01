@@ -506,6 +506,15 @@ class TableOrder(Document):
             if item.status == status_attending:
                 items_to_return.append(i.identifier)
 
+                item.status = "Completed"
+                item.ordered_time = frappe.utils.now_datetime()
+                item.save()
+
+                data_to_send.append(table.get_command_data(item))
+
+            if item.status == "Completed":
+                items_to_return.append(i.identifier)
+
                 item.status = "Delivered"
                 item.ordered_time = frappe.utils.now_datetime()
                 item.save()
@@ -513,7 +522,7 @@ class TableOrder(Document):
                 data_to_send.append(table.get_command_data(item))
 
         self.reload()
-        self.synchronize(dict(status=["Delivered"]))
+        self.synchronize(dict(status=item.status))
 
         return self.data()
 
