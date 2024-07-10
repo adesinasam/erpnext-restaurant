@@ -72,7 +72,7 @@ erpnext.PointOfSale.RestaurantController = class {
 				{
 					fieldtype: 'Link', label: __('POS Profile'),
 					options: 'POS Profile', fieldname: 'pos_profile', reqd: 1,
-					default: RM.pos_profile.name,
+					// default: RM.pos_profile.name,
 					get_query: () => pos_profile_query,
 					onchange: () => fetch_pos_payment_methods()
 				},
