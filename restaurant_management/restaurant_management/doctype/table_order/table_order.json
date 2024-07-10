@@ -43,6 +43,7 @@
   {
    "fieldname": "status",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Status",
    "options": "Attending\nInvoiced"
   },
@@ -56,6 +57,7 @@
   {
    "fieldname": "customer",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Customer",
    "options": "Customer"
   },
@@ -74,6 +76,7 @@
   {
    "fieldname": "amount",
    "fieldtype": "Currency",
+   "in_list_view": 1,
    "label": "Amount",
    "read_only": 1
   },
@@ -86,6 +89,7 @@
   {
    "fieldname": "discount",
    "fieldtype": "Currency",
+   "in_list_view": 1,
    "label": "Discount",
    "read_only": 1
   },
@@ -107,6 +111,7 @@
   {
    "fieldname": "pos_profile",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "POS Profile",
    "options": "POS Profile"
   },
@@ -130,12 +135,14 @@
    "fetch_from": "table.description",
    "fieldname": "table_description",
    "fieldtype": "Read Only",
+   "in_list_view": 1,
    "label": "Table Description"
   },
   {
    "fetch_from": "room.description",
    "fieldname": "room_description",
    "fieldtype": "Read Only",
+   "in_list_view": 1,
    "label": "Room Description"
   },
   {
@@ -154,7 +161,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-11-25 07:58:48.917404",
+ "modified": "2024-07-10 03:54:01.466949",
  "modified_by": "Administrator",
  "module": "Restaurant Management",
  "name": "Table Order",

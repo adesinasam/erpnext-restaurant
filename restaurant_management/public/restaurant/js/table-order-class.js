@@ -587,9 +587,9 @@ class TableOrder {
                 no_letterhead: RM.pos_profile.letter_head ? RM.pos_profile.letter_head : 1,
                 letterhead: RM.pos_profile.letter_head ? RM.pos_profile.letter_head : 'No%20Letterhead'
             },
-            set_buttons: false,
+            set_buttons: true,
             is_pdf: true,
-            customize: false,
+            customize: true,
             title: title
         }
 
